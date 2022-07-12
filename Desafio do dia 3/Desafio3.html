@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Desafio3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Desafio dia 3</title>
+</head>
+<body>
+    <main class="conteudo">
+        
+        <div data-conteudo="primeira" id="pag-0">
+            <h1 class="conteudo-perguntas">Vamos começar?</h1>
+            
+            <input type="button" class="conteudo-botao letsgo" value="Let's go!">
+        </div>
+
+        <div class="hide" data-conteudo="segunda" id="pag-1">
+            <h2 class="conteudo-perguntas">Qual area gostaria de seguir?</h2>
+            
+            <input type="button" class="conteudo-botao frontend" value="Front-End">
+            <input type="button" class="conteudo-botao backend" value="Back-End">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+
+        <div class="hide" data-conteudo="opcoes-frontend" id="pag-2">
+            <h3 class="conteudo-perguntas">Qual area de Front-End gostaria de aprender?</h3>
+            
+            <input type="button" class="conteudo-botao react" value="React">
+            <input type="button" class="conteudo-botao vue" value="Vue">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+
+        <div class="hide" data-conteudo="opcoes-backend" id="pag-3">
+            <h4 class="conteudo-perguntas">Qual area de Back-End gostaria de aprender?</h4>
+            
+            <input type="button" class="conteudo-botao C" value="C#">
+            <input type="button" class="conteudo-botao java" value="Java">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+
+        <div class="hide" data-conteudo="especializar-react" id="pag-4">
+            <h1 class="conteudo-perguntas">Deseja se especializar em react ou se tornar Fullstack?</h1>
+            
+            <input type="button" class="conteudo-botao especializar decisao" value="Especilista">
+            <input type="button" class="conteudo-botao fullstack decisao" value="Fullstack">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+
+        <div class="hide" data-conteudo="especializar-vue" id="pag-5">
+            <h2 class="conteudo-perguntas">Deseja se especializar em Vue ou se tornar Fullstack?</h2>
+            
+            <input type="button" class="conteudo-botao especializar decisao" value="Especilista">
+            <input type="button" class="conteudo-botao fullstack decisao" value="Fullstack">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+
+        <div class="hide" data-conteudo="especializar-c" id="pag-6">
+            <h5 class="conteudo-perguntas">Deseja se especializar em C# ou se tornar Fullstack?</h5>
+            
+            <input type="button" class="conteudo-botao especializar decisao" value="Especilista">
+            <input type="button" class="conteudo-botao fullstack decisao" value="Fullstack">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+
+        <div class="hide" data-conteudo="especializar-java" id="pag-7">
+            <h5 class="conteudo-perguntas">Deseja se especializar em Java ou se tornar Fullstack?</h5>
+            
+            <input type="button" class="conteudo-botao especializar decisao" value="Especilista">
+            <input type="button" class="conteudo-botao fullstack decisao" value="Fullstack">
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+        <div class="hide" data-conteudo="ultima" id="pag-8">
+            <h5 class="conteudo-perguntas">Existe ainda mais linguagens que gostaria de se especializar ou de conhecer, se sim, quais?</h5>
+            
+            <input type="text" id="linguagem" class="input-linguagem" required>
+            <input type="button" class="conteudo-acrescentar" value="+">
+                
+            <ul class="lista"></ul>
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+                <input type="button" class="conteudo-finalizar" value="Finalizar">
+            </div>
+        </div>
+        <div class="hide" data-conteudo="final" id="pag-9">
+            <h5 class="conteudo-perguntas frase-final"></h5>
+
+            <div class="navegacao">
+                <input type="button" class="conteudo-voltar" value="Voltar">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Matt D Roger - 2022</p>
+    </footer>
+    <script src="Desafio3.js"></script>
+</body>
+</html>
