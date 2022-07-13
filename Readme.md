@@ -2,7 +2,7 @@
 
 Olá, foi assim que resolvi o desafio do dia 2.
 
-Desenvolvi uma pagina web simples contendo as três perguntas sujeridas, suas respectivas caixas de respostas e o botão de enviar.
+Desenvolvi uma página web simples contendo as três perguntas sugeridas, suas respectivas caixas de respostas e o botão de enviar.
 
 Criei o arquivo em javascript e escrevi seu código conforme acreditei responder o desafio proposto.
 Tive bastante problemas no meu código inicial e tive que pesquisar bastante pra achar soluções, literalmente quebrei minha cabeça kkk
