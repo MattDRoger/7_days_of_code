@@ -1,0 +1,108 @@
+body {
+    width: 100%;
+    background-color: 	#c7c7f3;
+    color: #9370DB;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.conteudo {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.titulo {
+    max-width: inherit;
+    font-size: 30px;
+    margin: 40px auto;
+    padding: 0 20%;
+}
+
+.conteudo-perguntas {
+    max-width: inherit;
+    margin: 0 auto;
+    padding: 0 20%;
+}
+
+.conteudo-botao {
+    margin: 60px auto;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 20px 40px;
+    color: inherit;
+    border-radius: 5px;
+    border: 2px solid #9370DB;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px #4B0082;
+}
+  
+.conteudo-botao:hover {
+transition: 0.3s;
+background-color: #9370DB;
+color: #c7c7f3;
+transform: scale(1.1);
+border: 2px solid #c7c7f3;
+}
+
+.selecionado {
+    background-color: #9370DB;
+    color: #c7c7f3;
+    border: 2px solid #c7c7f3;
+    transform: scale(1.1);
+}
+
+
+.conteudo-numero:hover, .conteudo-finalizar:hover {
+    transition: 0.3s;
+    background-color: #9370DB;
+    color: #c7c7f3;
+    transform: scale(1.1);
+    border: 2px solid #c7c7f3;
+}
+
+.conteudo-resposta {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #dfdff5;
+    width: 300px;
+    height: 40px;
+    padding: 2px;
+    color: inherit;
+    font-family: inherit;
+    border: 2px solid #9370DB;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #4B0082;
+    outline: 0;
+}
+
+.calculadora {
+    background-color: #bdb7d8;
+    border: 2px solid #9370DB;
+    margin: 0 500px;
+    border-radius: 5px;
+    padding: 30px 0;
+}
+
+.conteudo-numero {
+    display: inline-block;
+    margin: 10px auto;
+    background-color: #dfdff5;
+    font-family: inherit;
+    padding: 10px 20px;
+    color: inherit;
+    border-radius: 5px;
+    border: 2px solid #9370DB;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px #4B0082;
+}
+
+
+.hide {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    font-size:10px;
+}
+  

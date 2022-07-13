@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="desafio7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Desafio dia 7</title>
+</head>
+<body onload="draw();">
+    <main class="conteudo">
+        
+        <div data-conteudo="primeira" id="pag-0">
+            <h1 class="titulo">Calculadora</h1>
+            <p class="conteudo-perguntas">Qual operação deseja fazer?</p>
+
+            <input type="button" class="conteudo-botao operacao" id="soma" value="Soma">
+            <input type="button" class="conteudo-botao operacao" id="subtracao" value="Subtração">
+            <input type="button" class="conteudo-botao operacao" id="multiplicacao" value="Multiplicação">
+            <input type="button" class="conteudo-botao operacao" id="divisao" value="Divisão">
+            
+        </div>
+        <section class="calculadora">
+            <div>
+                <input type="number" class="conteudo-resposta" id="canvas"></input>
+            </div>
+            <div>
+                <input type="button" class="conteudo-numero" id="numero-1" value="1">
+                <input type="button" class="conteudo-numero" id="numero-2" value="2">
+                <input type="button" class="conteudo-numero" id="numero-3" value="3">
+            </div>
+            <div>
+                <input type="button" class="conteudo-numero" id="numero-4" value="4">
+                <input type="button" class="conteudo-numero" id="numero-5" value="5">
+                <input type="button" class="conteudo-numero" id="numero-6" value="6">
+            </div>
+            <div class="linha-3">
+                <input type="button" class="conteudo-numero" id="numero-7" value="7">
+                <input type="button" class="conteudo-numero" id="numero-8" value="8">
+                <input type="button" class="conteudo-numero" id="numero-9" value="9">
+            </div>
+            <div>
+                <input type="button" class="conteudo-numero" id="numero-0" value="0">
+            </div>
+        </section>
+    
+        <div>
+            <input type="button" class="conteudo-botao sair" id="sair" value="Sair">
+            <input type="button" class="conteudo-botao calcular" id="calcular" value="Calcular">
+        </div>
+
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Matt D Roger - 2022</p>
+    </footer>
+    <script src="desafio7.js"></script>
+</body>
+</html>
