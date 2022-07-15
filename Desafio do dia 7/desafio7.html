@@ -11,24 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Desafio dia 7</title>
 </head>
-<body onload="draw();">
+<body onload="draw()">
     <main class="conteudo">
         
         <div data-conteudo="primeira" id="pag-0">
             <h1 class="titulo">Calculadora</h1>
             <p class="conteudo-perguntas">Qual operação deseja fazer?</p>
 
-            <input type="button" class="conteudo-botao operacao" id="soma" value="Soma">
-            <input type="button" class="conteudo-botao operacao" id="subtracao" value="Subtração">
-            <input type="button" class="conteudo-botao operacao" id="multiplicacao" value="Multiplicação">
-            <input type="button" class="conteudo-botao operacao" id="divisao" value="Divisão">
+            <input type="button" class="conteudo-botao operacao" data-operacao="soma" value="Soma">
+            <input type="button" class="conteudo-botao operacao" data-operacao="subtracao" value="Subtração">
+            <input type="button" class="conteudo-botao operacao" data-operacao="multiplicacao" value="Multiplicação">
+            <input type="button" class="conteudo-botao operacao" data-operacao="divisao" value="Divisão">
             
         </div>
-        <section class="calculadora">
-            <div>
-                <ul id="monitor">
-                    <li></li>
-                </ul>
+        <section data-conteudo="calculadora" class="calculadora">
+            <div id="monitor">
+                <p class="simbolo"></p>
+                <ul id="direita-tela"></ul>
+                <p class="total"></p>
             </div>
             <div>
                 <input type="number" class="conteudo-resposta" id="canvas"></input>
