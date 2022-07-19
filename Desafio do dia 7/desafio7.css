@@ -109,7 +109,7 @@ ul li{
     border-top: 1px;
     text-align: left;
     display: flex;
-    flex-direction: column;
+    ;
 }
 #monitor {
     border: 2px solid #9370DB;
