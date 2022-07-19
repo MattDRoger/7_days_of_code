@@ -4,12 +4,11 @@ const operacoes = document.querySelectorAll('[data-operacao]');
 const simbolo = document.querySelector('.simbolo');
 const inserir = document.querySelector(".inserir");
 const total = document.querySelector(".total");
+
 var monitor = document.getElementById("direita-tela");
+
 let valorOperacao = '';
 let valoresInformados = [];
-
-
-
 
 operacaoSoma();
 operacaoSubtracao();
@@ -95,7 +94,7 @@ function botaoInserir() {
             monitor.innerHTML += `<li>${valorInput}</li>`;//O valor é exibido na tela
 
             valoresInformados.push(valorInput);
-            
+
             console.log(valoresInformados);
         }
     })
@@ -114,11 +113,10 @@ function numerosCalculadora() {
 function botaoCalcular() {
     const calcular = document.querySelector(".calcular");
 
-
     calcular.addEventListener('click', () => {
         if (valorOperacao == "+") {
             calcula(Operacoes.ADICAO)
-        }
+        }//Se a operação for igual a + ele executará a function Calcula
         else if (valorOperacao == "-") {
             calcula(Operacoes.SUBTRACAO);
         }
@@ -128,24 +126,26 @@ function botaoCalcular() {
         else if (valorOperacao == "/") {
             calcula(Operacoes.DIVISAO);
         }
+        else (Alert('*** Operação não definida! ***'));
     })
 }
 
+//function que calcula os valores informados pela operação selecionada.
 function calcula(operacao) {
     let soma = +valoresInformados[0];
     for (let i = 1; i < valoresInformados.length; i++) {
         if (operacao == Operacoes.ADICAO) {
             soma += +valoresInformados[i];
-        }
+        }//operações é uma "ENUM", a soma é o primeiro valor informado + o restante da lista valoresInformados.
         else if (operacao == Operacoes.SUBTRACAO) {
             soma -= +valoresInformados[i];
-        }
+        }//operações é uma "ENUM", a soma é o primeiro valor informado - o restante da lista valoresInformados.
         else if (operacao == Operacoes.MULTIPLICACAO) {
             soma *= +valoresInformados[i];
-        }
+        }//operações é uma "ENUM", a soma é o primeiro valor informado * o restante da lista valoresInformados.
         else if (operacao == Operacoes.DIVISAO) {
             soma /= +valoresInformados[i];
-        }
+        }//operações é uma "ENUM", a soma é o primeiro valor informado / o restante da lista valoresInformados.
 
         total.innerHTML = `Total: ${soma}`;
 
