@@ -111,7 +111,7 @@ ul li{
     display: flex;
     ;
 }
-#monitor {
+.monitor {
     border: 2px solid #9370DB;
     height: 60px;
     background-color: aquamarine;
@@ -119,6 +119,7 @@ ul li{
     font-size: 10px;
     margin: 0 5px;
     padding: 10px;
+    max-height: 60px;
 
 }
 
